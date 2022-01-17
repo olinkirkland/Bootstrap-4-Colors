@@ -17,29 +17,31 @@
     <!-- <link rel="stylesheet" href="breakpoints.css" /> -->
 
     <title>Follow-Along</title>
+
+    <style>
+      span {
+        width: 200px;
+        height: 200px;
+        display: inline-block;
+      }
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="bg-dark text-white">This is an h1 block</h1>
-      <h1 class="bg-dark text-white d-inline">This is an h1 inline</h1>
-      <h1 class="bg-dark text-white d-none">This is an h1 inline</h1>
-      <span class="bg-info text-white">I am a span</span>
-      <span class="bg-info text-white">I am a regular span</span>
-      <span class="bg-info text-white d-block">I am a block span</span>
-
-      <h1 class="d-none d-sm-block">HIDDEN ON XS</h1>
-      <h1 class="d-none d-md-block">HIDDEN ON XS AND SM</h1>
-
-      <div class="container">
-        <h4>
-          The current breakpoint is:
-          <span class="d-inline d-sm-none">XS</span>
-          <span class="d-none d-sm-inline d-md-none">SM</span>
-          <span class="d-none d-md-inline d-lg-none">MD</span>
-          <span class="d-none d-lg-inline d-xl-none">LG</span>
-          <span class="d-none d-xl-inline">XL</span>
-        </h4>
-      </div>
+      <h1 class="text-center border border-info rounded shadow">
+        Borders and Shadows
+      </h1>
+      <span class="border"></span>
+      <span class="border-bottom"></span>
+      <span class="border-right"></span>
+      <span class="border-right border-left"></span>
+      <span class="border border-right-0"></span>
+      <span class="border border-danger"></span>
+      <span class="border border-primary rounded"></span>
+      <span class="border border-primary rounded-circle"></span>
+      <h3 class="shadow-sm">Small Shadow</h3>
+      <h3 class="shadow">Regular Shadow</h3>
+      <h3 class="shadow-lg">Large Shadow</h3>
     </div>
 
     <!-- Optional JavaScript -->
