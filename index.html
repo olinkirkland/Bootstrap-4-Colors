@@ -17,29 +17,56 @@
   </head>
   <body>
     <div class="container">
-      <button class="btn btn-primary">Click Me</button>
-      <button class="btn btn-secondary">Click Me</button>
-      <button class="btn btn-success">Click Me</button>
-      <button class="btn btn-info">Click Me</button>
-      <button class="btn btn-danger">Click Me</button>
-      <button class="btn btn-warning">Click Me</button>
-
-      <a href="#" class="btn btn-success">THIS IS A LINK</a>
-
-      <button class="btn btn-outline-warning">Click Me</button>
-
-      <h2>Button Sizes</h2>
-
-      <button class="btn btn-info btn-sm">Small</button>
-      <button class="btn btn-info">Regular</button>
-      <button class="btn btn-info btn-lg">Large</button>
-
-      <h2>Active vs Disabled</h2>
-
-      <button class="btn btn-info">Click me</button>
-      <button class="btn btn-info active">Click me</button>
-      <button class="btn btn-info" disabled>Disabled</button>
+      <div class="jumbotron">
+        <h1 class="display-1">Hello, World!</h1>
+        <p class="lead">
+          This is a simple hero unit, a jumbotron containing some information
+        </p>
+        <hr class="my-4" />
+        <p>
+          It uses utility classes for typography and spacing to space content
+          out within the larger container.
+        </p>
+        <a class="btn btn-primary btn-lg" href="#">Learn more</a>
+      </div>
     </div>
+
+    <div class="container">
+      <div class="jumbotron">
+        <h1 class="display-1">Adopt a pet</h1>
+        <p class="lead">
+          This is a simple hero unit, a jumbotron containing some information
+        </p>
+        <a class="btn btn-success btn-lg" href="#">Sign up</a>
+      </div>
+    </div>
+
+    <div id="jumbo" class="jumbotron jumbotron-fluid text-white">
+      <div class="container">
+        <h1 class="display-4">Adopt a pet</h1>
+        <p class="lead">
+          This is a simple hero unit, a jumbotron containing some information
+        </p>
+        <a class="btn btn-outline-light btn-lg" href="#">Sign up</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="jumbotron bg-dark text-light">
+        <div class="display-4">Adopt a pet</div>
+        <div class="lead">
+          Approximately 7.6 million companion animals enter animal shelters
+          nationwide every year.
+        </div>
+        <a href="#" class="btn btn-outline-light btn-lg">Apply Now!</a>
+      </div>
+    </div>
+
+    <style>
+      #jumbo {
+        background-image: url('https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
+      }
+    </style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Boostrap JS -->
