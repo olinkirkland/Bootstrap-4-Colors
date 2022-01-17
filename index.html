@@ -13,60 +13,34 @@
       crossorigin="anonymous"
     />
 
-    <title>Colors</title>
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="breakpoints.css" /> -->
+
+    <title>Follow-Along</title>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-1">Hello, World!</h1>
-        <p class="lead">
-          This is a simple hero unit, a jumbotron containing some information
-        </p>
-        <hr class="my-4" />
-        <p>
-          It uses utility classes for typography and spacing to space content
-          out within the larger container.
-        </p>
-        <a class="btn btn-primary btn-lg" href="#">Learn more</a>
-      </div>
-    </div>
+      <h1 class="bg-dark text-white">This is an h1 block</h1>
+      <h1 class="bg-dark text-white d-inline">This is an h1 inline</h1>
+      <h1 class="bg-dark text-white d-none">This is an h1 inline</h1>
+      <span class="bg-info text-white">I am a span</span>
+      <span class="bg-info text-white">I am a regular span</span>
+      <span class="bg-info text-white d-block">I am a block span</span>
 
-    <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-1">Adopt a pet</h1>
-        <p class="lead">
-          This is a simple hero unit, a jumbotron containing some information
-        </p>
-        <a class="btn btn-success btn-lg" href="#">Sign up</a>
-      </div>
-    </div>
+      <h1 class="d-none d-sm-block">HIDDEN ON XS</h1>
+      <h1 class="d-none d-md-block">HIDDEN ON XS AND SM</h1>
 
-    <div id="jumbo" class="jumbotron jumbotron-fluid text-white">
       <div class="container">
-        <h1 class="display-4">Adopt a pet</h1>
-        <p class="lead">
-          This is a simple hero unit, a jumbotron containing some information
-        </p>
-        <a class="btn btn-outline-light btn-lg" href="#">Sign up</a>
+        <h4>
+          The current breakpoint is:
+          <span class="d-inline d-sm-none">XS</span>
+          <span class="d-none d-sm-inline d-md-none">SM</span>
+          <span class="d-none d-md-inline d-lg-none">MD</span>
+          <span class="d-none d-lg-inline d-xl-none">LG</span>
+          <span class="d-none d-xl-inline">XL</span>
+        </h4>
       </div>
     </div>
-
-    <div class="container">
-      <div class="jumbotron bg-dark text-light">
-        <div class="display-4">Adopt a pet</div>
-        <div class="lead">
-          Approximately 7.6 million companion animals enter animal shelters
-          nationwide every year.
-        </div>
-        <a href="#" class="btn btn-outline-light btn-lg">Apply Now!</a>
-      </div>
-    </div>
-
-    <style>
-      #jumbo {
-        background-image: url('https://images.unsplash.com/photo-1542202229-7d93c33f5d07?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8Zm9yZXN0fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=700&q=60');
-      }
-    </style>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Boostrap JS -->
