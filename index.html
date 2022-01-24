@@ -28,42 +28,27 @@
   </head>
   <body>
     <div class="container">
-      <h1 class="text-center">Input Groups</h1>
-
-      <form>
-        <div class="input-group mb-3">
+      <h1 class="text-center">Inline Forms</h1>
+      <form action="" class="form-inline">
+        <div class="input-group mr-3">
           <div class="input-group-prepend">
-            <span class="input-group-text">$</span>
-          </div>
-          <input type="text" class="form-control" placeholder="Enter a price" />
-        </div>
-
-        <div class="input-group mb-3">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Enter your email"
-          />
-          <div class="input-group-append">
-            <span class="input-group-text">@gmail.com</span>
+            <span class="input-group-text">
+              <i class="fas fa-user"></i>
+            </span>
+            <input type="text" class="form-control" placeholder="Username" />
           </div>
         </div>
 
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Search" />
-          <div class="input-group-append">
-            <button class="btn btn-success">Go</button>
-          </div>
-        </div>
-
-        <div class="input-group mb-3">
+        <div class="input-group mr-3">
           <div class="input-group-prepend">
             <span class="input-group-text">
               <i class="fas fa-key"></i>
             </span>
+            <input type="password" class="form-control" placeholder="" />
           </div>
-          <input type="password" class="form-control" />
         </div>
+
+        <input type="submit" class="btn btn-info"/>
       </form>
     </div>
 
