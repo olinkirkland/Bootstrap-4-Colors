@@ -17,44 +17,88 @@
     <!-- <link rel="stylesheet" href="breakpoints.css" /> -->
 
     <title>Follow-Along</title>
-
-    <style>
-      span {
-        width: 100px;
-        height: 100px;
-        display: inline-block;
-      }
-    </style>
   </head>
   <body>
-    <div class="container py-5">
-      <h2 class="display-2">Padding Utility</h2>
+    <div class="container">
+      <h1>Form Controls</h1>
+      <form>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control"
+            placeholder="Enter your email"
+          />
+        </div>
 
-      <h1 class="bg-info d-inline-block p-0">p-0</h1>
-      <h1 class="bg-info d-inline-block p-1">p-1</h1>
-      <h1 class="bg-info d-inline-block p-2">p-2</h1>
-      <h1 class="bg-info d-inline-block p-3">p-3</h1>
-      <h1 class="bg-info d-inline-block p-4">p-4</h1>
-      <h1 class="bg-info d-inline-block p-5">p-5</h1>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input
+            type="password"
+            id="password"
+            class="form-control"
+            placeholder="Enter your password"
+          />
+          <small class="text-muted">Password must be 8 characters</small>
+        </div>
 
-      <button class="btn btn-lg btn-warning pt-5">pt-5</button>
-      <button class="btn btn-lg btn-warning pb-5">pb-5</button>
-      <button class="btn btn-lg btn-warning py-5">py-5</button>
-      <button class="btn btn-lg btn-warning pl-5">pl-5</button>
-      <button class="btn btn-lg btn-warning pr-5">pr-5</button>
-      <button class="btn btn-lg btn-warning px-5">px-5</button>
+        <div class="form-group">
+          <label for="select">Select</label>
+          <select id="select" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
 
-      <h2 class="display-2">Responsive Stuff!</h2>
+        <div class="form-group">
+          <label for="multiselect">Multi Select</label>
+          <select id="multiselect" class="form-control" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
 
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
-      <span class="m-2 m-md-3 m-lg-4 m-xl-5 bg-danger"></span>
+        <div class="form-group">
+          <label for="textarea">Text Area</label>
+          <textarea
+            id="textarea"
+            class="form-control"
+            cols="30"
+            rows="4"
+          ></textarea>
+        </div>
 
+        <div class="form-group">
+          <input type="file" class="form-control-file" id="" />
+        </div>
+
+        <div class="form-g">
+          <input
+            type="range"
+            class="form-control-range"
+            id="formControlRange"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            class="form-control form-control-lg"
+            placeholder="Enter your email"
+          />
+        </div>
+
+        <input type="submit" value="Submit" class="btn btn-lg btn-primary" />
+      </form>
     </div>
 
     <!-- Optional JavaScript -->
