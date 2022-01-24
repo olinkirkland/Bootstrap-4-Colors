@@ -13,6 +13,14 @@
       crossorigin="anonymous"
     />
 
+    <!-- Fontawesome Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+
     <!-- Custom CSS -->
     <!-- <link rel="stylesheet" href="breakpoints.css" /> -->
 
@@ -20,78 +28,45 @@
   </head>
   <body>
     <div class="container">
-      <h1>Form Check</h1>
-      <h4>Checkboxes</h4>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="checkbox"
-          name=""
-          id="chickens"
-          disabled
-        />
-        <label class="form-check-label" for="chickens">Chickens</label>
-      </div>
-      <div class="custom-control custom-checkbox">
-        <input class="custom-control-input" type="checkbox" name="" id="cats" />
-        <label class="custom-control-label" for="cats">Cats</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="checkbox" name="" id="rabbits" />
-        <label class="form-check-label" for="rabbits">Rabbits</label>
-      </div>
+      <h1 class="text-center">Input Groups</h1>
 
-      <h4>Radio Buttons</h4>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="pet" id="chickens" />
-        <label class="form-check-label" for="chickens">Chickens</label>
-      </div>
-      <div class="custom-control custom-radio">
-        <input
-          class="custom-control-input"
-          type="radio"
-          name="pet"
-          id="cats2"
-        />
-        <label class="custom-control-label" for="cats2">Cats</label>
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="pet" id="rabbits" />
-        <label class="form-check-label" for="rabbits">Rabbits</label>
-      </div>
+      <form>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">$</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Enter a price" />
+        </div>
 
-      <h4>Inline Form Checks</h4>
-      <div class="form-check-inline">
-        <input class="form-check-input" type="radio" name="pet" id="chickens" />
-        <label class="form-check-label" for="chickens">Chickens</label>
-      </div>
-      <div class="form-check-inline">
-        <input class="form-check-input" type="radio" name="pet" id="cats" />
-        <label class="form-check-label" for="cats">Cats</label>
-      </div>
-      <div class="form-check-inline">
-        <input class="form-check-input" type="radio" name="pet" id="rabbits" />
-        <label class="form-check-label" for="rabbits">Rabbits</label>
-      </div>
+        <div class="input-group mb-3">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter your email"
+          />
+          <div class="input-group-append">
+            <span class="input-group-text">@gmail.com</span>
+          </div>
+        </div>
 
-      <h4>File Browser</h4>
-      <div class="custom-file">
-        <input type="file" class="custom-file-input" />
-        <label for="" class="custom-file-label">Choose file</label>
-      </div>
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Search" />
+          <div class="input-group-append">
+            <button class="btn btn-success">Go</button>
+          </div>
+        </div>
 
-      <h4>Range Input</h4>
-      <div class="form-group">
-        <label for="customRange1">Custom Range</label>
-        <input
-          type="range"
-          class="custom-range"
-          id="customRange1"
-          min="1"
-          max="10"
-        />
-      </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              <i class="fas fa-key"></i>
+            </span>
+          </div>
+          <input type="password" class="form-control" />
+        </div>
+      </form>
     </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Boostrap JS -->
     <script
