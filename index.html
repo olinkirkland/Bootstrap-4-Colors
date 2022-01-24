@@ -20,87 +20,55 @@
   </head>
   <body>
     <div class="container">
-      <h1>Form Controls</h1>
-      <form>
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            class="form-control"
-            placeholder="Enter your email"
-          />
-        </div>
+      <h1>Form Check</h1>
+      <h4>Checkboxes</h4>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          name=""
+          id="chickens"
+          disabled
+        />
+        <label class="form-check-label" for="chickens">Chickens</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="" id="cats" />
+        <label class="form-check-label" for="cats">Cats</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" name="" id="rabbits" />
+        <label class="form-check-label" for="rabbits">Rabbits</label>
+      </div>
 
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input
-            type="password"
-            id="password"
-            class="form-control"
-            placeholder="Enter your password"
-          />
-          <small class="text-muted">Password must be 8 characters</small>
-        </div>
+      <h4>Radio Buttons</h4>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pet" id="chickens" />
+        <label class="form-check-label" for="chickens">Chickens</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pet" id="cats" />
+        <label class="form-check-label" for="cats">Cats</label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="pet" id="rabbits" />
+        <label class="form-check-label" for="rabbits">Rabbits</label>
+      </div>
 
-        <div class="form-group">
-          <label for="select">Select</label>
-          <select id="select" class="form-control">
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="multiselect">Multi Select</label>
-          <select id="multiselect" class="form-control" multiple>
-            <option>1</option>
-            <option>2</option>
-            <option>3</option>
-            <option>4</option>
-            <option>5</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="textarea">Text Area</label>
-          <textarea
-            id="textarea"
-            class="form-control"
-            cols="30"
-            rows="4"
-          ></textarea>
-        </div>
-
-        <div class="form-group">
-          <input type="file" class="form-control-file" id="" />
-        </div>
-
-        <div class="form-g">
-          <input
-            type="range"
-            class="form-control-range"
-            id="formControlRange"
-          />
-        </div>
-
-        <div class="form-group">
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            id="email"
-            class="form-control form-control-lg"
-            placeholder="Enter your email"
-          />
-        </div>
-
-        <input type="submit" value="Submit" class="btn btn-lg btn-primary" />
-      </form>
+      <h4>Inline Form Checks</h4>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="radio" name="pet" id="chickens" />
+        <label class="form-check-label" for="chickens">Chickens</label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="radio" name="pet" id="cats" />
+        <label class="form-check-label" for="cats">Cats</label>
+      </div>
+      <div class="form-check-inline">
+        <input class="form-check-input" type="radio" name="pet" id="rabbits" />
+        <label class="form-check-label" for="rabbits">Rabbits</label>
+      </div>
     </div>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Boostrap JS -->
     <script
