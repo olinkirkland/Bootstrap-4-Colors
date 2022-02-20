@@ -27,83 +27,50 @@
     <title>Follow-Along</title>
   </head>
   <body>
-    <nav class="navbar navbar-dark bg-dark navbar-expand-lg py-3">
-      <a href="#" class="navbar-brand">
-        <i class="fas fa-paw d-none d-sm-inline mr-3"></i>
-        My Pets
-      </a>
+    <h1 class="display-3">Grid Basics</h1>
+    <div class="container">
+      <h3>Basics</h3>
+      <div class="row border" style="height: 200px">
+        <div class="col bg-info">FIRST</div>
+        <div class="col bg-success">SECOND</div>
+        <div class="col bg-primary">THIRD</div>
+        <div class="col bg-danger">THIRD</div>
+      </div>
+      <div class="row border" style="height: 200px">
+        <div class="col bg-info">FIRST</div>
+        <div class="col bg-success">SECOND</div>
+      </div>
+      <h3>Custom Widths</h3>
+      <div class="row border" style="height: 200px">
+        <div class="col-4 bg-danger">EIGHT</div>
+        <div class="col-8 bg-warning">FOUR</div>
+      </div>
+      <div class="row border" style="height: 200px">
+        <div class="col-2 bg-danger">TWO</div>
+        <div class="col-8 bg-warning">EIGHT</div>
+        <div class="col-2 bg-danger">TWO</div>
+      </div>
 
-      <button
-        class="navbar-toggler"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a href="#" class="nav-link active">Dogs</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Cats</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link disabled">Rabbits</a>
-          </li>
-        </ul>
-
-        <form action="" class="form-inline ml-auto">
-          <div class="input-group">
-            <div class="input-group-prepend">
-              <span class="input-group-text">
-                <i class="fas fa-search"></i>
-              </span>
-            </div>
-            <input type="text" class="form-control" />
-            <div class="input-group-append">
-              <button class="btn btn-success">Search</button>
-            </div>
+      <h3>Demo with Text</h3>
+      <div class="row">
+        <div class="col-9">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis
+            a architecto quia natus culpa! Dolorum natus, quae consectetur nemo,
+            maxime tempora est accusantium iusto quas amet facilis sit commodi
+            deserunt vero voluptatem tenetur earum id, ab repudiandae! Omnis,
+            dolor ex.
+          </p>
+        </div>
+        <div class="col-3">
+          <div class="nav flex-column">
+            <a href="" class="nav-link">Home</a
+            ><a href="" class="nav-link">About</a
+            ><a href="" class="nav-link">Contact</a
+            ><a href="" class="nav-link">Sign Out</a>
           </div>
-        </form>
+        </div>
       </div>
-    </nav>
-
-    <div class="jumbotron">
-      <div class="container">
-        <h1 class="display-3">Hey There!</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae
-          labore fugit atque. Officiis molestiae quaerat reiciendis quas? Quas
-          veniam, deleniti explicabo, tempore hic impedit eius perspiciatis
-          obcaecati tenetur pariatur quos aut veritatis culpa quibusdam nihil
-          blanditiis distinctio, nesciunt delectus nisi!
-        </p>
-        <button class="btn btn-success">
-          <span class="mr-2">Learn More</span>
-          <i class="fas fa-arrow-right"></i>
-        </button>
-      </div>
-    </div>
-
-    <div class="container border p-3">
-      <ul class="nav nav-pills nav-fill flex-column flex-md-row mb-2">
-        <li class="nav-item">
-          <a href="#" class="nav-link active">Dogs</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link">cats</a>
-        </li>
-        <li class="nav-item">
-          <a href="#" class="nav-link disabled">Rabbits</a>
-        </li>
-      </ul>
-      <p class="mb-0">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit,
-        consequatur. Deserunt veritatis architecto blanditiis fugiat voluptates
-        facere quasi laudantium fuga?
-      </p>
     </div>
 
     <!-- Optional JavaScript -->
