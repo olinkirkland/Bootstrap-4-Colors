@@ -28,57 +28,31 @@
   </head>
   <body>
     <div class="container mt-4">
-      <h1>Accordion</h1>
-      <div id="accordionContainer">
-        <div class="card">
-          <div class="card-header">
-            <button
-              class="btn btn-link"
-              data-toggle="collapse"
-              data-target="#part1"
-            >
-              Part 1
-            </button>
-          </div>
-          <div class="collapse show" id="part1" data-parent="#accordionContainer">
-            <div class="card-body">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Mollitia, aliquid? Illum eum numquam nesciunt quis, aspernatur
-              fugit cupiditate accusamus esse?
+      <!-- trigger -->
+
+      <button class="btn btn-info" data-toggle="modal" data-target="#myModal">Launch Modal!</button>
+
+      <!-- modal window -->
+      <!-- tab index -1 means it's not accessible via the tab navigation (using the tab key on the keyboard) -->
+      <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">This is my first modal</h5>
+              <button class="close" aria-hidden="true" data-dismiss="modal">
+                <span>&times;</span>
+              </button>
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <button
-              class="btn btn-link"
-              data-toggle="collapse"
-              data-target="#part2"
-            >
-              Part 2
-            </button>
-          </div>
-          <div class="collapse" id="part2" data-parent="#accordionContainer">
-            <div class="card-body">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-              Excepturi earum pariatur at, ex maiores fugiat distinctio atque
-              eaque cum facilis.
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              natus est accusantium amet harum libero, laudantium sed officiis
+              sit maxime.
             </div>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-header">
-            <button
-              class="btn btn-link"
-              data-toggle="collapse"
-              data-target="#part3"
-            >
-              Part 3
-            </button>
-          </div>
-          <div class="collapse" id="part3" data-parent="#accordionContainer">
-            <div class="card-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum vitae quas quibusdam minus, hic quisquam recusandae commodi? Adipisci reprehenderit qui placeat voluptates, ipsa delectus?
+            <div class="modal-footer">
+              <button class="btn btn-success">Save</button>
+              <button class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
             </div>
           </div>
         </div>
