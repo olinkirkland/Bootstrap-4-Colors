@@ -28,29 +28,37 @@
   </head>
   <body>
     <div class="container mt-4">
-      <h1 class="display-3">Dropdowns</h1>
-      <div class="dropdown my-3">
-        <button class="btn-success btn dropdown-toggle" data-toggle="dropdown">
-          Drop Down
+      <h1 class="display-3 text-center">Collapse</h1>
+      <p>
+        <a href="#content2" class="btn btn-success" data-toggle="collapse">
+          Click Me!
+        </a>
+        <button
+          class="btn btn-info"
+          data-toggle="collapse"
+          data-target="#content"
+        >
+          Click Me!
         </button>
-        <div class="dropdown-menu">
-          <a href="" class="dropdown-item">Home</a>
-          <a href="" class="dropdown-item">About</a>
-          <a href="" class="dropdown-item">Contact</a>
-          <div class="dropdown-divider"></div>
-          <a href="" class="dropdown-item">About</a>
-          <a href="" class="dropdown-item">Contact</a>
+      </p>
+      <div class="collapse" id="content">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Collapse Me!</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad
+            tenetur adipisci? Iusto quod dolores earum voluptate expedita
+            doloribus officia.
+          </div>
         </div>
       </div>
-
-      <div class="dropup">
-        <button class="btn-warning btn dropdown-toggle" data-toggle="dropdown">
-          Drop Up
-        </button>
-        <div class="dropdown-menu">
-          <a href="" class="dropdown-item">Home</a>
-          <a href="" class="dropdown-item">About</a>
-          <a href="" class="dropdown-item">Contact</a>
+      <div class="collapse" id="content2">
+        <div class="card">
+          <div class="card-body">
+            <h4 class="card-title">Collapse Me 2!</h4>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad
+            tenetur adipisci? Iusto quod dolores earum voluptate expedita
+            doloribus officia.
+          </div>
         </div>
       </div>
     </div>
