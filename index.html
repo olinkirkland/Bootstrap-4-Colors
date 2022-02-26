@@ -28,22 +28,31 @@
   </head>
   <body>
     <div class="container mt-4">
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
-        distinctio non a molestiae unde ad porro labore velit sit dolores quod
-        ipsa quidem rerum recusandae obcaecati, aut iure? Maiores dicta id
-        placeat fugit repellendus esse sequi, facere est! Repellat
-        <button
-          class="btn btn-sm btn-outline-secondary"
-          data-toggle="popover"
-          data-placement="left"
-          data-title="A breed of cattle dog"
-          data-content="Avoid these dangerous creatures when encountering them in the wild"
-        >
-          tempora inventore
+      <h1 class="display-3">Dropdowns</h1>
+      <div class="dropdown my-3">
+        <button class="btn-success btn dropdown-toggle" data-toggle="dropdown">
+          Drop Down
         </button>
-        rerum, sit tempore debitis cum doloribus sed! Accusantium, vel.
-      </p>
+        <div class="dropdown-menu">
+          <a href="" class="dropdown-item">Home</a>
+          <a href="" class="dropdown-item">About</a>
+          <a href="" class="dropdown-item">Contact</a>
+          <div class="dropdown-divider"></div>
+          <a href="" class="dropdown-item">About</a>
+          <a href="" class="dropdown-item">Contact</a>
+        </div>
+      </div>
+
+      <div class="dropup">
+        <button class="btn-warning btn dropdown-toggle" data-toggle="dropdown">
+          Drop Up
+        </button>
+        <div class="dropdown-menu">
+          <a href="" class="dropdown-item">Home</a>
+          <a href="" class="dropdown-item">About</a>
+          <a href="" class="dropdown-item">Contact</a>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
@@ -63,12 +72,5 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      $(function () {
-        $('[data-toggle="tooltip"]').tooltip();
-        $('[data-toggle="popover"]').popover();
-      });
-    </script>
   </body>
 </html>
