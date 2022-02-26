@@ -28,37 +28,20 @@
   </head>
   <body>
     <div class="container mt-4">
-      <button
-        class="btn btin-info"
-        data-toggle="tooltip"
-        data-placement="right"
-        title="Thanks for hovering"
-      >
-        Hover on me
-      </button>
-
-      <button
-        class="btn btin-info"
-        data-toggle="tooltip"
-        data-placement="bottom"
-        title="Thanks for hovering"
-      >
-        Hover on me
-      </button>
-
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis
         distinctio non a molestiae unde ad porro labore velit sit dolores quod
         ipsa quidem rerum recusandae obcaecati, aut iure? Maiores dicta id
         placeat fugit repellendus esse sequi, facere est! Repellat
-        <a
-          href=""
-          data-toggle="tooltip"
-          data-placement="bottom"
-          data-html="true"
-          data-title="A <b>breed</b> of cattle dog"
-          >tempora inventore</a
+        <button
+          class="btn btn-sm btn-outline-secondary"
+          data-toggle="popover"
+          data-placement="left"
+          data-title="A breed of cattle dog"
+          data-content="Avoid these dangerous creatures when encountering them in the wild"
         >
+          tempora inventore
+        </button>
         rerum, sit tempore debitis cum doloribus sed! Accusantium, vel.
       </p>
     </div>
@@ -84,6 +67,7 @@
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip();
+        $('[data-toggle="popover"]').popover();
       });
     </script>
   </body>
