@@ -28,36 +28,58 @@
   </head>
   <body>
     <div class="container mt-4">
-      <h1 class="display-3 text-center">Collapse</h1>
-      <p>
-        <a href="#content2" class="btn btn-success" data-toggle="collapse">
-          Click Me!
-        </a>
-        <button
-          class="btn btn-info"
-          data-toggle="collapse"
-          data-target="#content"
-        >
-          Click Me!
-        </button>
-      </p>
-      <div class="collapse" id="content">
+      <h1>Accordion</h1>
+      <div id="accordionContainer">
         <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Collapse Me!</h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad
-            tenetur adipisci? Iusto quod dolores earum voluptate expedita
-            doloribus officia.
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#part1"
+            >
+              Part 1
+            </button>
+          </div>
+          <div class="collapse show" id="part1" data-parent="#accordionContainer">
+            <div class="card-body">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Mollitia, aliquid? Illum eum numquam nesciunt quis, aspernatur
+              fugit cupiditate accusamus esse?
+            </div>
           </div>
         </div>
-      </div>
-      <div class="collapse" id="content2">
         <div class="card">
-          <div class="card-body">
-            <h4 class="card-title">Collapse Me 2!</h4>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ad
-            tenetur adipisci? Iusto quod dolores earum voluptate expedita
-            doloribus officia.
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#part2"
+            >
+              Part 2
+            </button>
+          </div>
+          <div class="collapse" id="part2" data-parent="#accordionContainer">
+            <div class="card-body">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Excepturi earum pariatur at, ex maiores fugiat distinctio atque
+              eaque cum facilis.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header">
+            <button
+              class="btn btn-link"
+              data-toggle="collapse"
+              data-target="#part3"
+            >
+              Part 3
+            </button>
+          </div>
+          <div class="collapse" id="part3" data-parent="#accordionContainer">
+            <div class="card-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea harum vitae quas quibusdam minus, hic quisquam recusandae commodi? Adipisci reprehenderit qui placeat voluptates, ipsa delectus?
+            </div>
           </div>
         </div>
       </div>
