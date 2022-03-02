@@ -1,0 +1,8 @@
+// customize colors
+$theme-colors: (
+  'primary': #8316ff,
+  'secondary': #ff27db
+);
+
+// import bootstrap
+@import '../bootstrap-4.0.0/scss/bootstrap.scss';
